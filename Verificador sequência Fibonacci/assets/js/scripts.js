@@ -11,6 +11,8 @@ function informaNumero() {
 }
 
 function calculaSequencia(numInfo) {
+    if (!numInfo) return false;
+    
     let ultimoValor, penultimoValor, valor;
     penultimoValor = 0;
     ultimoValor = 1;
