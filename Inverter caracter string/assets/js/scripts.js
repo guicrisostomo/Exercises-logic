@@ -1,18 +1,23 @@
-function reverteString() {
-    let palavra, palavraReversa = '';
-
-    palavra = prompt("Informe a palavra:");
+document.getElementById('buttonReverse').addEventListener('click', () => {
+    let word, wordReverse = '';
+    word = document.getElementById('textChar').value;
     
-    if (!palavra) {
-        console.log("Caracter inválido");
+    if (!word) {
+        document.getElementById('textResult').innerHTML = "Caracter inválido";
         return false;
     }
 
-    for (let i = 0; i < palavra.length; i++) {
-        palavraReversa = palavra[i] + palavraReversa;
+    for (let i = 0; i < word.length; i++) {
+        wordReverse = word[i] + wordReverse;
     }
 
-    console.log("Palavra com os caracteres invertidos: " + palavraReversa);
-}
+    document.getElementById('textResult').innerHTML = wordReverse;
+});
 
-reverteString();
+document.getElementById('imgCopyText').addEventListener('click', () => {
+    let word = document.getElementById('textResult').innerHTML;
+
+    navigator.clipboard.writeText(word);
+
+    alert('Texto copiado!');
+});
