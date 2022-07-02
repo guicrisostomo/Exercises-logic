@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.remessaonline.com.br/blog/wp-content/uploads/2021/10/visual-studio-code-o-que-e.jpg.optimal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: auto;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: white;
+}
+
+#divYes, #divNo {
+    display: none;
+    align-items: center;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+#divYes div {
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    width: 100px;height: 100px;text-align: center;
+    position: relative;
+    background-color: green;
+    color: white;
+    margin: 20px;
+}
+
+#divNo div {
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    width: 100px;height: 100px;text-align: center;
+    position: relative;
+    background-color: red;
+    color: white;
+    margin: 20px;
+}
+
+#divYes span, #divNo span {
+    font-size: 32px;
+    color: white;
+}
+#divYes div span, #divNo div span {
+    position: absolute;
+    top: 50%;
+    font-size: 32px;
+    margin: -20px 10px 10px -24px;
+}
+
+#divYes div, #divNo div {
+    transition: 0.5s;
+}
+
+#textNumber {
+    margin: 12px 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#textNumber:focus {
+    background-color: black;
+    color: white;
+}
+
+#buttonCheck {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+#buttonCheck:hover {
+    background-color: black;
+    color: white;
+}
