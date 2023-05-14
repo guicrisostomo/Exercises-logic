@@ -211,8 +211,8 @@ public class InterviewDev {
 
                 valores = addNewValue(valores);
 
-                System.out.println(valores);
-                System.out.println(valores.stream().reduce(BigDecimal.ZERO, BigDecimal::add));
+                System.out.println("Novo resultado: " + valores);
+                System.out.println("Soma: " + valores.stream().reduce(BigDecimal.ZERO, BigDecimal::add));
                 break;
             default:
                 System.out.println("Opção inválida");
