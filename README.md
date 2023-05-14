@@ -1,2 +1,2 @@
-# Logic exercises
-Challenges of selective process
+# Selective processes
+Challenges of selective processes
